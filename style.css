@@ -1,8 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 
+Medium: 
+Semi-bold: 
+Bold: 
+
+- Line heights:
+Default: 
+Small: 
+Medium: 
+Paragraph default: 
+
+- Letter spacing
+
+
+-- 02 COLORS
+
+- Primary: 
+- Tints: 
+- Shades:
+- Accents: 
+- Greys
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+Default: 
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: darkcyan;
-    color: white;
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: darkcyan;
+  color: white;
 }
