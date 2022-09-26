@@ -1,3 +1,17 @@
+/****************************/
+/* HEADER */
+/****************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7f5ff;
+
+  /* Because we want header to be sticky later */
+  height: 8.6rem;
+  padding: 0 4.8rem;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -9,12 +23,32 @@ header nav ul {
   display: flex;
   justify-content: space-between;
 }
+
 header nav ul li {
   list-style: none;
   margin-left: 2rem;
 }
-header nav ul li a {
-  color: wheat;
-  font-size: 2rem;
+
+.logo {
+  height: 2.2rem;
+}
+
+/****************************/
+/* NAVIGATION */
+/****************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
 }

@@ -5,13 +5,13 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights:
-Default: 
+Default: 400
 Medium: 
 Semi-bold: 
 Bold: 
 
 - Line heights:
-Default: 
+Default: 1
 Small: 
 Medium: 
 Paragraph default: 
@@ -21,11 +21,13 @@ Paragraph default:
 
 -- 02 COLORS
 
-- Primary: 
-- Tints: 
-- Shades:
+- Primary: #06141F
+- Tints: #D1D1D1 #F4F4F4
+- Shades: #0D3450
 - Accents: 
 - Greys
+#06141F;
+
 
 --- 05 SHADOWS
 
@@ -53,6 +55,44 @@ html {
 }
 
 body {
-  background-color: darkcyan;
-  color: white;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #06141f;
+  background-color: #d1d1d1;
+}
+
+/****************************/
+/* GENERAL REUSABLE COMPONENTS */
+/****************************/
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.calendar {
+  display: flex;
+  margin-left: auto;
+  width: 11.2rem;
+  height: 3.5rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 1.6rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  gap: 9px;
 }
