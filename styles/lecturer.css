@@ -1,7 +1,172 @@
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* body {
   height: 100vh;
+} */
+
+/****************************/
+/* HEADER */
+/****************************/
+
+.header {
+  display: flex;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  height: 9.9rem;
+  padding: 4.9rem 3.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+/****************************/
+/* NAVIGATION */
+/****************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5.8rem;
+  margin-left: 100px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #06141f;
+  font-weight: 500;
+  font-size: 1.6em;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #0d3450;
+}
+
+.profile-group {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 3.3rem;
+}
+
+.lecturer-profile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #06141f;
+  gap: 1.6rem;
+}
+
+.profile-image {
+  height: 4rem;
+}
+
+/****************************/
+/* UPCOMING COURSES SECTION */
+/****************************/
+
+.heading-1 {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.number {
+  width: 3rem;
+  height: 2.4rem;
+  border: 1px solid #06141f;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.8rem;
+}
+
+.heading-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.courses {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course {
+  width: 26.5rem;
+  height: 20.8rem;
+  background: #ebe0fe;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2.7rem 0 0 3.5rem;
+}
+
+.course.course--2 {
+  background: #feeac4;
+}
+
+.course.course--3 {
+  background: #cfebf5;
+}
+
+.course.course--4 {
+  background: #dbf5d2;
+}
+
+.box {
+  position: relative;
+}
+
+.backdrop {
+  content: "";
+  width: 26.5rem;
+  height: 20.8rem;
+  border-radius: 10px;
+  border: 1px solid #ebe0fe;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -48%);
+  z-index: -1;
+}
+
+.backdrop.b--2 {
+  border: 1px solid #feeac4;
+}
+
+.backdrop.b--3 {
+  border: 1px solid #cfebf5;
+}
+
+.backdrop.b--4 {
+  border: 1px solid #dbf5d2;
+}
+
+.course-txt {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 2.3rem;
+}
+
+.course-txt2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-top: 1.7rem;
+}
+
+.course::after {
+  content: "";
+  width: 20rem;
+  margin-top: 2rem;
+  border: 0.5px solid #8a8787;
 }
