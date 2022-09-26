@@ -96,3 +96,42 @@ body {
   font-size: 1.2rem;
   gap: 9px;
 }
+
+.scdContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 4% auto;
+}
+.leftContent {
+  width: 55%;
+  border-right: solid #06141f 1.5px;
+  padding: 1%;
+}
+.topCont {
+  display: flex;
+  justify-content: space-between;
+}
+.tRightCont {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.tRightCont--2 {
+  display: flex;
+  margin-left: auto;
+  width: 11.2rem;
+  height: 3.5rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 1.6rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+.newest {
+  display: flex;
+  justify-content: space-between;
+}
