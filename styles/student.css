@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -51,6 +52,13 @@ header .profile img{
 main{
     border: 2px solid black;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
 main .welcome{
     display: block;
     width: 50%;
