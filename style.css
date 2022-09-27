@@ -59,7 +59,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #06141f;
-  background-color: #d1d1d1;
+  background-color: #f4f4f4;
 }
 
 /****************************/
@@ -88,7 +88,7 @@ body {
   margin-left: auto;
   width: 11.2rem;
   height: 3.5rem;
-  background: #f4f4f4;
+  background: #d1d1d1;
   border-radius: 10px;
   align-items: center;
   padding: 0 1.6rem;
@@ -128,7 +128,7 @@ body {
   margin-left: auto;
   width: 11.2rem;
   height: 3.5rem;
-  background: #f4f4f4;
+  background: #d1d1d1;
   border-radius: 10px;
   align-items: center;
   padding: 0 1.6rem;
@@ -228,6 +228,28 @@ body {
   padding: 2% 2%;
   height: 3rem;
   width: 3.5rem;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.rightContent {
+  width: ;
+}
+
+.rightTopCont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightTopCont svg {
+  background-color: #d1d1d1;
+  padding: 2.5% 2.5%;
+  height: 2.5rem;
+  width: 3rem;
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
