@@ -1,6 +1,162 @@
-main{
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 60px auto 20px ;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    color: black;
+    background-color: cadetblue;
+    padding: 5px;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+}
+header input{
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: auto;
+    border-radius: 17px;
+    border: 1px white solid;
+    padding: 3px;
+}
+header .profile{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    align-items: center;
+    width: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+header .profile img{
+    height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+    background-color: azure;
+}
+main{
+    border: 2px solid black;
+}
+main .welcome{
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+main .welcome h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.0rem;
+}
+main .welcome h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-bottom: 70px;
+}
+.side-nav{
+    height: 100%;
+    width: 100%;
+    background-color: cadetblue;
+    margin: auto;
+}
+.side-nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.side-nav ul li{
+    cursor: pointer;
+    list-style: none;
+}
+.side-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    padding: 20px;
+}
+main .upcoming-Classes .intro-upcoming-classes{
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main .upcoming-Classes .intro-upcoming-classes h1{
+    font-size: 2.0rem;
+    margin-bottom: 5px;
+}
+main .classes{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+main .cards{
+    background-color: aliceblue;
+    width: 100%;
+    height: 150px;
+    border-radius: 17px;
+    outline:  2px solid red;
+}
+main .cards:nth-child(odd){
+    background-color: aqua;
+}
+main .cards:nth-child(4){
+    background-color: palevioletred;
+}
+main .cards h3,h4,p{
+    padding-left: 15%;
+}
+main .cards h3{
+    margin-top: 35px;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .cards h4{
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+main .cards p{
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main .cards .after-p::after{
+    content: '';
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: cadetblue;
+    text-align: center;
+}
+@media screen and (max-width:720px) {
+    main .cards h3,h4,p{
+        text-align: center;
+        padding-left: 0;
+    }
+    main .cards {
+        padding-bottom: 15px;
+    }
 }
