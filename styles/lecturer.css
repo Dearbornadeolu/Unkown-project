@@ -165,7 +165,7 @@
 }
 
 .box:hover {
-  z-index: 999;
+  z-index: 900;
 }
 
 .box .backdrop {
