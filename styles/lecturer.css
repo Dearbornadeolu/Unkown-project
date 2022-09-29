@@ -164,6 +164,10 @@
   cursor: pointer;
 }
 
+.box:hover {
+  z-index: 999;
+}
+
 .box .backdrop {
   display: block;
   content: "";
