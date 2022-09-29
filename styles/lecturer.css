@@ -386,13 +386,13 @@
   justify-content: space-between;
   border: 1px solid black;
   border-radius: 10px;
-  padding: 6% 3%;
+  padding: 6% 6%;
   align-items: center;
   margin-top: 5%;
 }
 
 .barCont {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
