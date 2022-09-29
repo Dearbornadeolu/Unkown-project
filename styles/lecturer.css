@@ -310,9 +310,9 @@
   -o-border-radius: 10px;
 }
 
-.rightContent {
-  width: ;
-}
+/****************************/
+/* PROGRESS SECTION */
+/****************************/
 
 .rightTopCont {
   display: flex;
@@ -321,13 +321,75 @@
 
 .rightTopCont svg {
   background-color: #d1d1d1;
-  padding: 2.5% 2.5%;
-  height: 2.5rem;
-  width: 3rem;
+  padding: 2% 1.5%;
+  height: 4rem;
+  width: 4rem;
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.rightContent {
+  width: 40%;
+}
+
+.rightNextContent, .rightNextContent--2, .rightNextContent--3 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 6% 3%;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.barCont {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
+}
+.bar {
+  height: 1em;
+  background-color: #ebe0fe;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 7%;
+}
+
+.progressSubject {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.nextIcon svg {
+  background-color: #d1d1d1;
+  padding: 15% 15%;
+  height: rem;
+  width: 2rem;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.rightNextContent--2 .bar {
+  background-color: #F5E7C5;
+}
+.rightNextContent--3 .bar {
+  background-color: #cfebf5;
 }
