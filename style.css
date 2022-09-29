@@ -59,7 +59,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #06141f;
-  background-color: #d1d1d1;
+  background-color: #f4f4f4;
 }
 
 /****************************/
@@ -88,92 +88,16 @@ body {
   margin-left: auto;
   width: 11.2rem;
   height: 3.5rem;
-  background: #f4f4f4;
+  background: #d1d1d1;
   border-radius: 10px;
   align-items: center;
   padding: 0 1.6rem;
   font-weight: 700;
   font-size: 1.2rem;
   gap: 9px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
-.scdContainer {
-  display: flex;
-  justify-content: space-between;
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 4% auto;
-}
-.leftContent {
-  width: 55%;
-  border-right: solid #06141f 1.5px;
-  padding: 1%;
-}
-.topCont {
-  display: flex;
-  justify-content: space-between;
-}
-.tRightCont {
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
-}
-.tRightCont--2 {
-  display: flex;
-  margin-left: auto;
-  width: 11.2rem;
-  height: 3.5rem;
-  background: #f4f4f4;
-  border-radius: 10px;
-  align-items: center;
-  padding: 0 1.6rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  gap: 15px;
-}
-.newest {
-  display: flex;
-  justify-content: space-between;
-}
-.lesson p {
-  text-align: ;
-}
-.subject--2 p {
-  margin-top: 4%;
-}
-.lesson p {
-  margin-top: 15%;
-}
-.topDivInfo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5% 3%;
-}
-.subject {
-  display: flex;
-  align-items: center;
-}
-.subject--2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2%;
-}
-.lesson {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.time {
-  width: 15%;
-}
-.subject {
-  width: 50%;
-}
-.linkIcons {
-  width: 25%;
-}
-.lesson {
-  width: 10%;
-}
