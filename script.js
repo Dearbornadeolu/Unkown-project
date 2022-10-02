@@ -14,10 +14,12 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
+      document.querySelector(".header").classList.remove("container");
     }
 
     if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky");
+      document.querySelector(".header").classList.add("container");
     }
   },
   {

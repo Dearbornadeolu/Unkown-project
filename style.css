@@ -95,9 +95,8 @@ body {
   font-weight: 700;
   font-size: 1.2rem;
   gap: 9px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
-
