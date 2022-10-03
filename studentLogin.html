@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/studentLogin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="login_page">
+      <div class="cta_form">
+        <div class="school_logo">
+          <img src="img/logo-oau.png" alt="Logo of the school" />
+        </div>
+        <div class="form_section">
+          <h1 class="cta_text">Welcome back</h1>
+          <p class="description">Please enter your log in details here</p>
+          <form class="cta-form__sign" name="sign-up">
+            <div>
+              <label for="Student/StaffID">Student/ Staff ID</label>
+              <div class="relative_1">
+                <input
+                  class="input input__special"
+                  id="Student_Staff_ID"
+                  type="text"
+                  placeholder="ABC/2022/001"
+                  name="Student_Staff_ID"
+                  required
+                />
+                <svg
+                  class="id_icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.49 2.23006L5.5 4.10005C4.35 4.53005 3.41 5.89004 3.41 7.12004V14.55C3.41 15.73 4.19001 17.28 5.14001 17.99L9.44 21.2001C10.85 22.2601 13.17 22.2601 14.58 21.2001L18.88 17.99C19.83 17.28 20.61 15.73 20.61 14.55V7.12004C20.61 5.89004 19.67 4.53005 18.52 4.10005L13.53 2.23006C12.68 1.92006 11.32 1.92006 10.49 2.23006Z"
+                    stroke="#968F8F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 10.9199C11.96 10.9199 11.91 10.9199 11.87 10.9199C10.93 10.8899 10.18 10.1099 10.18 9.15991C10.18 8.18991 10.97 7.3999 11.94 7.3999C12.91 7.3999 13.7 8.18991 13.7 9.15991C13.69 10.1199 12.94 10.8899 12 10.9199Z"
+                    stroke="#968F8F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.01 13.7199C9.05001 14.3599 9.05001 15.4099 10.01 16.0498C11.1 16.7799 12.89 16.7799 13.98 16.0498C14.94 15.4099 14.94 14.3599 13.98 13.7199C12.9 12.9899 11.11 12.9899 10.01 13.7199Z"
+                    stroke="#968F8F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <div class="relative_2">
+                <input
+                  class="input input__special"
+                  id="password"
+                  type="password"
+                  placeholder="Enter your password"
+                  name="Password"
+                  required
+                />
+
+                <svg
+                  class="lock_icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 10V8C6 4.69 7 2 12 2C17 2 18 4.69 18 8V10"
+                    stroke="#968F8F"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 18.5C13.3807 18.5 14.5 17.3807 14.5 16C14.5 14.6193 13.3807 13.5 12 13.5C10.6193 13.5 9.5 14.6193 9.5 16C9.5 17.3807 10.6193 18.5 12 18.5Z"
+                    stroke="#968F8F"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 22H7C3 22 2 21 2 17V15C2 11 3 10 7 10H17C21 10 22 11 22 15V17C22 21 21 22 17 22Z"
+                    stroke="#968F8F"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <label for="select-session">Session</label>
+              <select id="select-session" name="select-session" required>
+                <option value="">2022/2023</option>
+              </select>
+            </div>
+            <div>
+              <label for="select-semester">Semester</label>
+              <select id="select-semester" name="select-semester" required>
+                <option value="Rain">Rain</option>
+                <option value="Harmattan">Harmattan</option>
+              </select>
+            </div>
+
+            <div class="fin">
+              <div class="flex_help">
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox" class="checkbox_label">Remember me</label>
+              </div>
+              <span class="forgot">Forgot password?</span>
+            </div>
+
+            <button class="btn btn--form">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="bg_image"></div>
+    </main>
+  </body>
+</html>
