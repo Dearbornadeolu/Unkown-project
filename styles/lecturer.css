@@ -28,9 +28,11 @@
   list-style: none;
   display: flex;
   align-items: center;
+  /* justify-items: center; */
   width: 48.7rem;
   justify-content: space-between;
   margin-left: 100px;
+  margin-top: 2%;
 }
 
 .main-nav-link:link,
@@ -47,6 +49,37 @@
 .main-nav-link:active {
   color: #0d3450;
 }
+
+.main-nav-list a {
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.main-nav-list a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -ms-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+}
+
+.main-nav-list a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 .profile-group {
   display: flex;
