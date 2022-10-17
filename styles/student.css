@@ -1,182 +1,77 @@
-
-*{
-    margin: 0;
-    padding: 0;
-}
-/****************************/
-/* DEFAULT BODY STYLING */
-/****************************/
 body{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 100px auto;
-    grid-template-rows: 60px auto 20px ;
-    background-color: #EBE0FE;
-}
-
-/****************************/
-/* HEADER SECTION */
-/****************************/
-
-header{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    color: black;
-    background-color: #e7f5ff;
-    padding: 5px;
-    cursor: pointer;
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  gap: 10px;
+  height: 100vh;
+  width: 100vw;
 }
 .logo{
-    display: flex;
+    width: 90%;
+    padding: 20px;
 }
-header input{
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-radius: 17px;
-    border: 1px white solid;
-    padding: 3px;
-}
-header .profile{
-    display: flex;
-    justify-content: flex-end;
-    gap: 3px;
-    align-items: center;
-    width: 50%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.3rem;
-}
-header .profile img{
-    height: 50px;
-    max-width: 50px;
-    border-radius: 50%;
-}
-
-/****************************/
-/* SIDE NAV SECTION */
-/****************************/
-
-.side-nav{
-    height: 100%;
-    width: 100%;
-    background-color: #e7f5ff;
-    margin: auto;
-}
-.side-nav ul{
+nav{
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 20px;
+}
+nav div{
+    display: flex;
     align-items: center;
-    height: inherit;
-    width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 10px;
 }
-.side-nav ul li{
-    cursor: pointer;
-    list-style: none;
+nav div img{
+    width: 20px;
 }
-.side-nav ul li a{
+nav div a{
     text-decoration: none;
-    color: black;
+    font-family: lato Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 28px;
 }
-
-/****************************/
-/* MAIN SECTION */
-/****************************/
-main{
-    border: 2px solid black;
-}
-
-  
-main .welcome{
-    display: block;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-main .welcome h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.0rem;
-}
-main .welcome h3{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    margin-bottom: 70px;
-}
-
-
 main{
     padding: 20px;
 }
-main .upcoming-Classes .intro-upcoming-classes{
-    margin-bottom: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#intro{
+    margin-bottom: 10px;
+    font-family: lato Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
 }
-main .upcoming-Classes .intro-upcoming-classes h1{
-    font-size: 2.0rem;
-    margin-bottom: 5px;
-}
-main .classes{
+.first-rectangle{
+    width: 90%;
+    height: 100px;
+    border-radius: 15px;
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
-
-main .cards{
-    background-color: #CFEBF5;;
-    width: 100%;
-    height: 150px;
-    border-radius: 17px;
-    outline:  2px solid red;
+.first-rectangle h1{
+    width: 60%;
+    padding: 20px;
+    font-family: lato Arial, Helvetica, sans-serif;
+    font-size: 2.0rem;
+    line-height: 24px;
 }
-main .cards:nth-child(odd){
-    background-color: #EBE0FE;
+.first-rectangle img{
+    max-width: 40%;
+    height: 100px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }
-main .cards:nth-child(4){
-    background-color: #FEEAC4;
+.right{
+    padding: 10px;
 }
-main .cards h3,h4,p{
-    padding-left: 15%;
+.notification-link{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
 }
-main .cards h3{
-    margin-top: 35px;
-    font-size: 1.3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.notification-logo{
 }
-main .cards h4{
-    font-size: 1.1rem;
-    margin-top: 5px;
-}
-main .cards p{
-    margin-top: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-main .cards .after-p::after{
-    content: '';
-    border-bottom: 1px solid black;
-    width: 50%;
-    margin: 10px auto;
-    display: block;
-}
-
-footer{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #e7f5ff;
-    text-align: center;
-}
-@media screen and (max-width:720px) {
-    main .cards h3,h4,p{
-        text-align: center;
-        padding-left: 0;
-    }
-    main .cards {
-        padding-bottom: 15px;
-    }
+.profile-calender{
+    height: 400px;
+    float: none;
 }

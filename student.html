@@ -8,71 +8,31 @@
     <link rel="stylesheet" href="styles/student.css">
     <title>student page</title>
 </head>
-<body>
+<body id="student-page">
     <!--Student Dashboard-->
-    <header>
-        <div class="logo"> 
-            <img src="image/student/oaulogo.png" alt="">
-        </div>
-        <input type="search" name="" id="searchNavBar" placeholder="Search here">
-        <div class="profile">
-            <img src="image/student/profile pic.jpg" alt="">
-            <h3 class="profileName">Joseph Olaitan</h3>
-        </div>
-    </header>
-    <nav class="side-nav">
-        <ul>
-            <li>
-                <div>menu</div>
-            </li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">NewsFeed </a></li>
-            <li><a href="#">Messages </a></li>
-            <li><a href="#"> Class </a></li>
-            <li><a href="login.html"> Log Out </a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="welcome">
-            <h1>Welcome Back,</h1>
-            <h3>Mr. Joseph Olaitan</h3>
-        </div>
-        <div class="upcoming-Classes">
-            <div class="intro-upcoming-classes">
-                <h1>Upcoming Class</h1>
-            <h3 class="upcoming-classes-date">December 2022</h3>
-            </div>
-            <div class="classes">
-                <div class="cards">
-                    <h3 class="course-code">EGL 501</h3>
-                    <h4 class="Course-title">English to the world</h4>
-                    <p class="date-time">4 Dec - 8 feb</p>
-                    <div class="after-p"></div>
-                </div>
-                <div class="cards">
-                    <h3 class="course-code">EGL 501</h3>
-                    <h4 class="Course-title">English to the world</h4>
-                    <p class="date-time">4 Dec - 8 feb</p>
-                    <div class="after-p"></div>
-                </div>
-                <div class="cards">
-                    <h3 class="course-code">EGL 501</h3>
-                    <h4 class="Course-title">English to the world</h4>
-                    <p class="date-time">4 Dec - 8 feb</p>
-                    <div class="after-p"></div>
-                </div>
-                <div class="cards">
-                    <h3 class="course-code">EGL 501</h3>
-                    <h4 class="Course-title">English to the world</h4>
-                    <p class="date-time">4 Dec - 8 feb</p>
-                    <div class="after-p"></div>
-                </div>
-            </div>
+    <aside class="left">
+        <img src="img/logo-oau.png" alt="" class="logo">
+        <nav class="side-nav">
+            <div><img src="img/home-logo.svg" alt="home"><a href="#" class="active">Home</a></div>
+            <div><img src="img/msg.svg" alt="home"><a href="#">messages</a></div>
+            <div><img src="img/class.svg" alt="home"><a href="#">class</a></div>
+            <div><img src="img/student.svg" alt="home"><a href="#">student</a></div>
+            <div><img src="img/settings.svg" alt="home"><a href="#">settings</a></div>
+        </nav>
+    </aside>
+    <main class="middle">
+        <h2 id="intro">Good Morning, Professor Osodeke</h2>
+        <div class="first-rectangle">
+            <h1>
+                Welcome! See your student details
+            </h1>
+            <img src="img/Saly-10.png" alt="img">
         </div>
     </main>
-    <footer>
-        copyright 
-    </footer>
+    <aside class="right">
+        <a href="#" class="notification-link"><img src="img/notification.svg" alt="notification" class="notification-logo"></a>
+        <div class="profile-calender"></div>
+    </aside>
     <!--the .json file would contain database like information that the backend ought to perform-->
     <script src="database.js"></script>
     <script src="database/lecturer.json"></script>

@@ -65,7 +65,17 @@ body {
 /****************************/
 /* GENERAL REUSABLE COMPONENTS */
 /****************************/
-
+:root{
+  --primary-color:#EBE0FE;
+  --secondary-color:#F5F5F5;
+  --text-color:#FFFFFF;
+  --text2-color:#121212;
+  /* for anchor tag */
+  --active-color:#28145C;
+  --inactive-color:#808080;
+  /* student page */
+  --rectangle-color:#28145C;
+}
 .container {
   /* 1140px */
   max-width: 120rem;
@@ -95,8 +105,31 @@ body {
   font-weight: 700;
   font-size: 1.2rem;
   gap: 9px;
-  -webkit-border-radius: ;
+  /* -webkit-border-radius: ;
   -moz-border-radius: ;
   -ms-border-radius: ;
-  -o-border-radius: ;
+  -o-border-radius: ; */
+}
+/* student */
+#student-page{
+  background-color: var(--primary-color);
+}
+#student-page .left{
+  background-color: var(--secondary-color);
+}
+#student-page nav div a.active{
+  color: var(--active-color);
+}
+#student-page nav div a{
+  color: var(--inactive-color);
+}
+#student-page #intro{
+  color: var(--text2-color);
+}
+#student-page .first-rectangle{
+  background-color: var(--rectangle-color);
+  color: var(--text-color);
+}
+.profile-calender{
+  background-color: var(--secondary-color);
 }
