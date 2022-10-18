@@ -1,6 +1,6 @@
 body{
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 20% auto 25%;
   gap: 10px;
   height: 100vh;
   width: 100vw;
@@ -69,9 +69,32 @@ main{
     justify-content: flex-end;
     padding: 15px;
 }
-.notification-logo{
-}
+
 .profile-calender{
     height: 400px;
-    float: none;
 }
+.profile{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    font-family: lato Arial, Helvetica, sans-serif;
+}
+.profile img{
+    max-width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
+.lecturer-profile h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 20px;
+}
+.lecturer-profile  p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.month-slide{
+    display: flex;
+}
+.month ul {list-style-type: none;}
