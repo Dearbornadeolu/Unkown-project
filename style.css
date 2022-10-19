@@ -179,7 +179,7 @@ color: white !important
   -o-border-radius: ; */
 }
 /* student */
-#lecturer-page{
+#lecturer-page, #student-dashboard{
   background-color: var(--primary-color);
 }
 #lecturer-page .left{
@@ -200,4 +200,8 @@ color: white !important
 }
 .profile-calender{
   background-color: var(--secondary-color);
+}
+/* student dashboard */
+#student-dashboard .menu-logo a{
+  color: var(--active-color);
 }
