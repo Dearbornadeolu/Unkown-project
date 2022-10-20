@@ -1,12 +1,13 @@
 body{
   display: grid;
-  grid-template-columns: 25% auto 20%;
+  grid-template-columns: 20% auto 20%;
   gap: 10px;
   height: 100vh;
   width: 100vw;
 }
 .left{
-  padding: 20px;
+  padding: 0 20px;
+  display: grid;
 }
 .left img{
   width: 90%;
@@ -32,4 +33,29 @@ body{
 }
 .menu-logo a{
   text-decoration: none;
+}
+.right{
+  padding: 20px;
+  background-color: #FFF5DA;
+}
+
+.student-profile img{
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+.profile-name{
+  text-align: center;
+}
+.profile-name h1{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+.profile-name p{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 30px;
 }

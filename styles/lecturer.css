@@ -64,11 +64,7 @@ main{
 .right{
     padding: 10px;
 }
-.notification-link{
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px;
-}
+
 
 .profile-calender{
     height: 400px;

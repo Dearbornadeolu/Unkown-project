@@ -178,11 +178,11 @@ color: white !important
   -ms-border-radius: ;
   -o-border-radius: ; */
 }
-/* student */
+/*  LECTURER */
 #lecturer-page, #student-dashboard{
   background-color: var(--primary-color);
 }
-#lecturer-page .left{
+.left{
   background-color: var(--secondary-color);
 }
 #lecturer-page nav div a.active{
@@ -201,7 +201,21 @@ color: white !important
 .profile-calender{
   background-color: var(--secondary-color);
 }
+/* FOR BOTH LECTURER AND STUDENT */
+.notification-link{
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
 /* student dashboard */
 #student-dashboard .menu-logo a{
   color: var(--active-color);
+}
+#student-dashboard  .active{
+  background-color: #FEE5A3;
+  border-left: 3px solid #010055;
+  padding: 3px;
+}
+#student-dashboard .profile-name{
+  color: var(--text2-color);
 }
