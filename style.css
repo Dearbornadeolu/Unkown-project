@@ -74,7 +74,12 @@ body {
   --active-color:#28145C;
   --inactive-color:#808080;
   /* student page */
+  --studentPage-color:#f2f2f2;
   --rectangle-color:#28145C;
+  --student-color: #FDCB47;
+  /* CAlENDER */
+  --day-color:#AAAAD5;
+  --selected-color:#fdcc47d5;
 }
 .container {
   /* 1140px */
@@ -93,96 +98,70 @@ body {
   font-size: 2.4rem;
 }
 /*calendar */
-
-/* Month header */
-.month{
+#calendar{
+  display: block;
+  margin: auto;
+  background-color: var(--text-color);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.year-date{
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
+  margin: 10px 0;
 }
-/* Month list */
-.month ul {
-margin: 0;
-padding: 0;
-display: flex;
+.year-btn button{
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
-
-.month ul li {
-color: white;
-font-size: 20px;
-text-transform: uppercase;
-letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev-month {
-color: black;
-}
-
-/* Next button */
-.month .next-month {
-color: black;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-margin: 0;
-padding: 10px 0;
-background-color:#ddd;
-}
-
-.weekdays li {
-display: inline-block;
-width: 13.6%;
-color: #666;
-text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-padding: 10px 0;
-background: #eee;
-margin: 0;
-}
-
-.days li {
-list-style-type: none;
-display: inline-block;
-width: 13.6%;
-text-align: center;
-margin-bottom: 5px;
-font-size:12px;
-color: #777;
-}
-
-/* Highlight the "current" day */
-.days li .active {
-padding: 5px;
-background: #1abc9c;
-color: white !important
-}
-/* i dont understand what this is doing here */
-.calendar {
-  display: flex;
-  margin-left: auto;
-  width: 11.2rem;
-  height: 3.5rem;
-  background: #d1d1d1;
-  border-radius: 10px;
-  align-items: center;
-  padding: 0 1.6rem;
+.days ul{
+  list-style: none;
+  display: grid;
+  font-size: .7rem;
+  grid-template-columns:20px 20px 20px 20px 20px 20px 20px;
+  text-align: center;
   font-weight: 700;
-  font-size: 1.2rem;
-  gap: 9px;
-  /* -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ; */
+}
+.day ul {
+  list-style: none;
+  display: grid;
+  font-size: .7rem;
+  grid-template-columns:20px 20px 20px 20px 20px 20px 20px;;
+  text-align: center;
+  font-weight: 400;
+}
+.days ul li{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day ul li{
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.today{
+  background-color: var(--day-color);
+  border-radius: 50%;
+}
+.selected-day{
+  background-color: var(--selected-color);
+  border-radius: 50%;
 }
 /*  LECTURER */
-#lecturer-page, #student-dashboard{
+#lecturer-page{
   background-color: var(--primary-color);
 }
-.left{
+#lecturer-page .left{
   background-color: var(--secondary-color);
 }
 #lecturer-page nav div a.active{
@@ -208,6 +187,12 @@ color: white !important
   padding: 15px;
 }
 /* student dashboard */
+#student-dashboard{
+  background-color: var(--studentPage-color);
+}
+#student-dashboard .left{
+  background-color: var(--student-color);
+}
 #student-dashboard .menu-logo a{
   color: var(--active-color);
 }
