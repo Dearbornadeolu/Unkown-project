@@ -1,6 +1,6 @@
 body{
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 20% auto 25%;
   gap: 10px;
   height: 100vh;
   width: 100vw;
@@ -57,4 +57,40 @@ body{
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 30px;
+}
+.assignment{
+  margin-top: 10px;
+}
+.assignment-intro{
+  display: flex;
+  justify-content: space-between;
+}
+.assignment-rack ul{
+  list-style: none;
+}
+.assignment-rack ul li{
+  margin-top: 4px;
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+}
+.assignment-title{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+.assignment-submit{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.assignment-intro h1{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+#assignment-view{
+  cursor: pointer;
 }

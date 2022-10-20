@@ -77,6 +77,7 @@ body {
   --studentPage-color:#f2f2f2;
   --rectangle-color:#28145C;
   --student-color: #FDCB47;
+  --assignment-color:#1D1D1E;
   /* CAlENDER */
   --day-color:#AAAAD5;
   --selected-color:#fdcc47d5;
@@ -102,7 +103,7 @@ body {
   display: block;
   margin: auto;
   background-color: var(--text-color);
-  width: fit-content;
+  width: 100%;
   padding: 10px;
   border-radius: 17px;
   font-family: Arial, Helvetica, sans-serif;
@@ -121,16 +122,18 @@ body {
 .days ul{
   list-style: none;
   display: grid;
-  font-size: .7rem;
-  grid-template-columns:20px 20px 20px 20px 20px 20px 20px;
+  font-size: .8rem;
+  gap: 2px;
+  grid-template-columns: 21px 21px 21px 21px 21px 21px 21px ;
   text-align: center;
   font-weight: 700;
 }
 .day ul {
   list-style: none;
   display: grid;
+  gap: 2px;
   font-size: .7rem;
-  grid-template-columns:20px 20px 20px 20px 20px 20px 20px;;
+  grid-template-columns:21px 21px 21px 21px 21px 21px 21px ;
   text-align: center;
   font-weight: 400;
 }
@@ -203,4 +206,11 @@ body {
 }
 #student-dashboard .profile-name{
   color: var(--text2-color);
+}
+.assignment-rack ul li{
+  background-color: var(--text-color);
+  color: var(--text2-color);
+}
+.assignment-intro h1{
+  color: var(--assignment-color);
 }
