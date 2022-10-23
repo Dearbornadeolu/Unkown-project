@@ -1,7 +1,7 @@
 body{
   display: grid;
   /* grid-template-columns: 20% auto 30%;*/ 
-  grid-template-columns: 20% 59% 20%;
+  grid-template-columns: 20% 55% 25%;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
@@ -38,9 +38,25 @@ body{
  .right{
   display: grid;
   margin-right: 10px;
+  max-height: 100vh;
+  overflow: scroll;
+  scrollbar-width: none;
+  cursor: pointer;
+}
+.right::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 0;
+  display: none;
+}
+
+.notification-link img{
+  height: 20px;
+  padding: 0;
+  margin: 0;
 }
 #calender{
   width: 80%;
+  padding: 0;
 }
 .days ul{
   grid-template-columns: 21px 21px 21px 21px 21px 21px 21px;
@@ -53,7 +69,7 @@ body{
   align-items: center;
 }
 .student-profile img{
-  width: 100px;
+  width: 50px;
   display: block;
   margin: auto;
 }
@@ -62,26 +78,31 @@ body{
 }
 .profile-name h1{
   font-family: public sans, Arial, Helvetica, sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 20px;
 }
 .profile-name p{
   font-family: public sans, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 18px;
 }
 .assignment{
   margin-top: 10px;
+  display: block;
+  margin: auto;
 }
 .assignment-intro{
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
 }
+
 .assignment-rack{
   overflow-y: auto;
-  max-height: 200px;
+  max-height: 180px;
   scrollbar-width: none;
 }
 .assignment-rack::-webkit-scrollbar{
@@ -93,11 +114,15 @@ body{
   list-style: none;
 }
 .assignment-rack ul li{
+  width: 200px;
+  height: 60px;
   margin-top: 4px;
   display: flex;
+  justify-content: center;
   gap: 10px;
   padding: 10px;
   cursor: pointer;
+  border-radius: 17px;
 }
 .assignment-title{
   font-family: public sans, Arial, Helvetica, sans-serif;
@@ -111,13 +136,28 @@ body{
 }
 .assignment-intro h1{
   font-family: public sans, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 700;
 }
 #assignment-view{
   cursor: pointer;
 }
+.to-do-intro{
+ padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.to-do ul li{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 17px;
+  margin-top: 5px;
+}
+
 @media screen and (max-width:700px) {
   body{
     display: grid;

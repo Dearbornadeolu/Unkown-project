@@ -103,7 +103,8 @@ body {
   display: block;
   margin: auto;
   background-color: var(--text-color);
-  width: 100%;
+  width: 200px;
+  height: 180px;
   padding: 10px;
   border-radius: 17px;
   font-family: Arial, Helvetica, sans-serif;
@@ -112,6 +113,8 @@ body {
 .year-date{
   display: flex;
   justify-content: space-between;
+  font-size: 1em;
+  font-weight: 700;
   padding: 0 10px;
   margin: 10px 0;
 }
@@ -123,17 +126,15 @@ body {
 .days ul{
   list-style: none;
   display: grid;
-  font-size: .8rem;
-  gap: 2px;
+  font-size: 8px;
   grid-template-columns: 21px 21px 21px 21px 21px 21px 21px ;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
 }
 .day ul {
   list-style: none;
   display: grid;
-  gap: 2px;
-  font-size: .7rem;
+  font-size: 8px;
   grid-template-columns:21px 21px 21px 21px 21px 21px 21px ;
   text-align: center;
   font-weight: 400;
@@ -214,4 +215,7 @@ body {
 }
 .assignment-intro h1{
   color: var(--assignment-color);
+}
+.to-do ul li{
+  background-color: var(--text-color);
 }
