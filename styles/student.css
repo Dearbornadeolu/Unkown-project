@@ -1,6 +1,6 @@
 body{
   display: grid;
-  /* grid-template-columns: 20% auto 30%; */
+  /* grid-template-columns: 20% auto 30%;*/ 
   grid-template-columns: 20% 59% 20%;
   height: 100vh;
   width: 100vw;
@@ -43,10 +43,14 @@ body{
   width: 80%;
 }
 .days ul{
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 21px 21px 21px 21px 21px 21px 21px;
+  justify-content: center;
+  align-content: center;
 }
 .day ul{
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 21px 21px 21px 21px 21px 21px 21px;
+  justify-content: center;
+  align-items: center;
 }
 .student-profile img{
   width: 100px;
@@ -76,7 +80,14 @@ body{
   justify-content: space-between;
 }
 .assignment-rack{
-  overflow-y: scroll;
+  overflow-y: auto;
+  max-height: 200px;
+  scrollbar-width: none;
+}
+.assignment-rack::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 0;
+  display: none;
 }
 .assignment-rack ul{
   list-style: none;
@@ -124,4 +135,4 @@ body{
     grid-template-columns:  18px 18px 18px 18px 18px 18px 18px;
     gap: 2px;
   }
-}
+} 
