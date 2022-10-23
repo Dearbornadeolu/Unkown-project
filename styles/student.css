@@ -1,9 +1,10 @@
 body{
   display: grid;
-  grid-template-columns: 20% auto 25%;
-  gap: 10px;
+  /* grid-template-columns: 20% auto 30%; */
+  grid-template-columns: 20% 59% 20%;
   height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
 }
 .left{
   padding: 0 20px;
@@ -12,7 +13,7 @@ body{
 .left img{
   width: 90%;
   margin: auto;
-}
+} 
 #menu-btn{
   width: 25px;
   margin: 20px 0;
@@ -34,10 +35,19 @@ body{
 .menu-logo a{
   text-decoration: none;
 }
-.right{
-  padding: 20px;
+ .right{
+  display: grid;
+  margin-right: 10px;
 }
-
+#calender{
+  width: 80%;
+}
+.days ul{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.day ul{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .student-profile img{
   width: 100px;
   display: block;
@@ -65,14 +75,18 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.assignment-rack{
+  overflow-y: scroll;
+}
 .assignment-rack ul{
   list-style: none;
 }
 .assignment-rack ul li{
   margin-top: 4px;
   display: flex;
-  gap: 4px;
+  gap: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 .assignment-title{
   font-family: public sans, Arial, Helvetica, sans-serif;
@@ -81,8 +95,7 @@ body{
 }
 .assignment-submit{
   font-family: public sans, Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  line-height: 18px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .assignment-intro h1{
@@ -93,4 +106,22 @@ body{
 }
 #assignment-view{
   cursor: pointer;
+}
+@media screen and (max-width:700px) {
+  body{
+    display: grid;
+    grid-template-columns: 20% auto 30%;
+    gap: 10px;
+  }
+ 
+  .days ul{
+    justify-content: center;
+     grid-template-columns: 18px 18px 18px 18px 18px 18px 18px; 
+     gap: 2px;
+  }
+  .day ul{
+    justify-content: center;
+    grid-template-columns:  18px 18px 18px 18px 18px 18px 18px;
+    gap: 2px;
+  }
 }

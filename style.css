@@ -107,6 +107,7 @@ body {
   padding: 10px;
   border-radius: 17px;
   font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 .year-date{
   display: flex;
