@@ -222,6 +222,12 @@ body {
 .registered-courses ul li:nth-child(even){
   background-color: var(--courseInfo2-color);
 }
+.todays-class ul li:nth-child(odd){
+  background-color: var(--text-color);
+}
+.todays-class ul  li:nth-child(even){
+  background-color: var(--courseInfo2-color);
+}
 .info{
   background-color: var(--courseInfo-color);
 }

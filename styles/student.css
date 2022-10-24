@@ -37,8 +37,7 @@ body{
 }
 /* Middle */
 .middle{
-  border: 2px solid black;
-  width: 95%;
+  width: 99%;
   height: 95vh;
   display: block;
   margin: auto;
@@ -78,23 +77,31 @@ body{
 }
 .registered-courses ul{
   cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 .registered-courses ul li{
-  display: flex;
-  flex-direction: column;
   list-style: none;
   border-radius: 17px;
-  height: 150px;
+  height: auto;
   width: 150px;
 }
 .registered-courses ul li img{
   display: block;
+  margin: auto;
   width: 100%;
+  height: 100px;
+  max-width: 150px;
   margin-top: 20%;
 }
 .info{
+  width: 97%;
+  display: block;
+  margin: auto;
   padding: 10px;
-  transform: translateY(-20px);
+  transform: translateY(-30px);
+  border-radius: 17px;
 }
 .info h1{
   font-family: public sans, Arial, Helvetica, sans-serif;
@@ -106,6 +113,71 @@ body{
   font-family: public sans, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+.more-registered-courses, .more-courses-today{
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+.todays-class {
+  margin-top: 20px;
+}
+.todays-class ul{
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.todays-class ul li{
+  list-style: none;
+  border-radius: 17px;
+  height: auto;
+  width: 150px;
+}
+.todays-class ul li img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100px;
+  max-width: 150px;
+  margin-top: 20%;
+}
+.more-courses-today{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.cgpa-score h1{
+  font-family: Public Sans;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.cgpa-score p{
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Public Sans;
+}
+.cgpa-score{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cgpa-score img{
+  width: 30px;
 }
  .right{
   display: grid;
