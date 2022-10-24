@@ -35,6 +35,78 @@ body{
 .menu-logo a{
   text-decoration: none;
 }
+/* Middle */
+.middle{
+  border: 2px solid black;
+  width: 95%;
+  height: 95vh;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+.middle-top{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  align-items: center;
+}
+.middle-top h1{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  line-height: 38px;
+}
+.middle-top-search{
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 17px; box-shadow: 1px 1px 4px 0px #1D1D1E14;
+}
+.middle-top-search input{
+  height: auto;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+.middle-top-search img{
+  width: 10px;
+}
+.my_courses h1{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 36px;
+  font-weight: 500;
+}
+.registered-courses ul{
+  cursor: pointer;
+}
+.registered-courses ul li{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 17px;
+  height: 150px;
+  width: 150px;
+}
+.registered-courses ul li img{
+  display: block;
+  width: 100%;
+  margin-top: 20%;
+}
+.info{
+  padding: 10px;
+  transform: translateY(-20px);
+}
+.info h1{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 25px;
+}
+.info p{
+  font-family: public sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
  .right{
   display: grid;
   margin-right: 10px;

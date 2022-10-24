@@ -78,6 +78,10 @@ body {
   --rectangle-color:#28145C;
   --student-color: #FDCB47;
   --assignment-color:#1D1D1E;
+  --courseInfo-color: #F9F9F9B2;
+  --courseInfo2-color:#AAAAD533;
+
+
   /* CAlENDER */
   --day-color:#AAAAD5;
   --selected-color:#fdcc47d5;
@@ -208,6 +212,18 @@ body {
 }
 #student-dashboard .profile-name{
   color: var(--text2-color);
+}
+.middle-top-search{
+  background-color: var(--text-color);
+}
+.registered-courses ul li:nth-child(odd){
+  background-color: var(--text-color);
+}
+.registered-courses ul li:nth-child(even){
+  background-color: var(--courseInfo2-color);
+}
+.info{
+  background-color: var(--courseInfo-color);
 }
 .assignment-rack ul li{
   background-color: var(--text-color);
